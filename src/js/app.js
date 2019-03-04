@@ -1,7 +1,8 @@
 'use strict';
 
-const sumOfValue = (value) => {
+const sumOfValue = (strings, value) => {
     let declination;
+    let str0 = strings[0];
         let mod = value % 10;
         if (mod === 1) {
             declination = `балл.`;
@@ -12,11 +13,11 @@ const sumOfValue = (value) => {
         else if (mod === 2 || mod === 3 || mod === 4) {
             declination = `балла.`;
         }
-        return `${value}${declination}`;
+        return `${str0} ${value} ${declination}`;
 };
 
-const value = 567;
-const output = sumOfValue`Ваш баланс: ${value} `;
+const value = 102;
+const output = sumOfValue`Ваш баланс:${value}`;
 console.log(output);
 
 
