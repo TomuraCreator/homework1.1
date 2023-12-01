@@ -21,3 +21,7 @@ const output = sumOfValue`Ваш баланс:${value}`;
 console.log(output);
 
 
+
+dfnasfjsalkfnasdklfjandlfjadlfksakdjf
+
+
